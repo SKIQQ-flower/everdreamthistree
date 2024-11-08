@@ -1,0 +1,124 @@
+<html>
+<head>
+  <base href="ever.dream.this.tree.com/ever-dream-this-man-alternate">
+  <title>Ever Dream This Tree?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .dream-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .face-svg {
+      animation: distort 10s infinite alternate;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* Mantém a proporção da imagem */
+    }
+
+    @keyframes distort {
+      0%, 100% {
+        filter: blur(0.5px);
+        transform: scale(1);
+      }
+      50% {
+        filter: blur(2px);
+        transform: scale(1.02) rotate(1deg);
+      }
+    }
+
+    .glitch-text {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      bottom: 20%;
+      background-color: #000;
+      padding: 5;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      animation: glitch 4s infinite;
+    }
+
+    @keyframes glitch {
+      0%, 100% {
+        opacity: 1;
+        transform: translateX(0);
+        color: #fff;
+      }
+      92% {
+        opacity: 1;
+        transform: translateX(0);
+        color: #fff;
+      }
+      93% {
+        opacity: 0.8;
+        transform: translateX(3px);
+        color: #0ff;
+      }
+      94% {
+        opacity: 0.8;
+        transform: translateX(-3px);
+        color: #f0f;
+      }
+      95% {
+        opacity: 1;
+        transform: translateX(0);
+        color: #fff;
+      }
+    }
+
+    .static {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAiLz48L3N2Zz4=');
+      opacity: 0.03;
+      pointer-events: none;
+    }
+
+    .dream-record {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.8em;
+      opacity: 0.5;
+    }
+
+    .coordinates {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 0.8em;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="dream-container">
+    <img class="face-svg" src="https://i.ibb.co/3d1Wp8B/e9db5d1c-1650-4227-955b-28835db08d72.jpg">
+    <div class="glitch-text">Have you dreamed of him?</div>
+    <div class="dream-record">Dream Record #4772</div>
+    <div class="coordinates">40°44'31.4"N 73°59'13.3"W</div>
+  </div>
+</body>
+</html>
